@@ -7,7 +7,7 @@ const startedAt = new Date().toISOString();
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hello from Google Cloud Run',
+    message: 'Hello Devfest! from Google Cloud Run',
     instance: instanceId,
     revision: process.env.K_REVISION || 'local',
     startedAt,
